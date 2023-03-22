@@ -1,0 +1,710 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+height: 50px;
+/* border: 1px solid black; */
+clear: both;
+}
+.first-section{
+  height: 400px;
+}
+.second-section, .who-we-are-section{
+  height: 300px;
+  width: 100%;
+  /* border: 1px solid black; */
+  float: left;
+}
+.first-section{
+  background: rgba(238, 241, 243, 1);
+}
+.first-blurb{
+  height: 400px;
+  width: 60%;
+  /* border: 1px solid black; */
+  float: left;
+  padding-left: 30px;
+}
+.jwli-image{
+  height: 400px;
+  width: 40%;
+  /* border: 1px solid black; */
+  float: left;
+}
+.h2-section{
+  height: 100px;
+  width: 100%;
+  /* border: 1px solid black; */
+  float: left;
+}
+.left-p{
+  height: 100px;
+  width: 50%;
+  /* border: 1px solid black; */
+  float: left;
+}
+.right-p{
+  height: 100px;
+  width: 50%;
+  /* border: 1px solid black; */
+  float: left;
+}
+.bottom-p{
+  height: 100px;
+  width: 100%;
+  /* border: 1px solid black; */
+  float: left;
+}
+.our-history-section{
+  height: 600px;
+  width: 100%;
+  /* border: 1px solid black; */
+  float: left;
+  background: rgba(238, 241, 243, 1);
+}
+.history-blurb{
+  height: 600px;
+  width: 60%;
+  /* border: 1px solid black; */
+  float: left;
+}
+.history-photo-one{
+  height: 300px;
+  width: 40%;
+  /* border: 1px solid black; */
+  float: left;
+}
+.history-photo-two{
+  height: 300px;
+  width: 40%;
+  /* border: 1px solid black; */
+  float: left;
+}
+.who-we-are-title{
+  height: 100px;
+  width: 100%;
+  /* border: 1px solid black; */
+  float: left;
+}
+.founder-photo{
+  height: 300px;
+  width: 30%;
+  /* border: 1px solid black; */
+  float: left;
+}
+.founder-blurb{
+  height: 300px;
+  width: 70%;
+  /* border: 1px solid black; */
+  float: left;
+}
+.last-paragraphs{
+  height: 300px;
+  width: 100%;
+  /* border: 1px solid black; */
+  float: left;
+}
+.fish-family{
+  height: 300px;
+  width: 50%;
+  /* border: 1px solid black; */
+  float: left;
+}
+.simmons{
+  height: 300px;
+  width: 50%;
+  /* border: 1px solid black; */
+  float: left;
+}
+.sign-up{
+  height: 60px;
+  width: 100%;
+  /* border: 1px solid black; */
+  float: left;
+  background: rgba(173, 190, 201, 1);
+}
+.footer-top{
+ height: 60px; 
+ /* width: 100%;
+ float: left; */
+ border-bottom: 1px solid white;
+}
+.footer-top-left{
+  height: 60px;
+  width: 50%;
+  float: left;
+}
+.footer-top-right{
+  height: 60px;
+  width: 50%;
+  float: left;
+}
+.footer-bottom{
+  height: 140px;
+  width: 100%;
+  float: left;
+}
+.footer-bottom-left{
+  height: 140px;
+  width: 50%;
+  float: left;
+}
+.footer-bottom-right{
+  height: 140px;
+  width: 50%;
+  float: left;
+}
+
+footer {
+height:200px;
+width: 100%;
+border: 1px solid black;
+background: rgba(130, 145, 152, 1);
+clear: both;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+nav ul{
+  padding: 10px 10px 10px 40px;
+}
+nav ul li{
+  list-style-type: none;
+  float: left;
+  margin-right: 11%;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+button{
+  cursor: pointer;
+}
+nav ul li:last-child{
+  display: none;
+}
+nav ul li:nth-child(8){
+  margin-right: 1px;
+}
+.btnStyle{
+  font-size: 1.5rem;
+  width: 100px;
+  padding: 5px;
+  color: white;
+  background: rgba(44, 50, 57, 1);
+}
+.first-blurb{
+  text-align: center;
+}
+.jwli-logo{
+  margin-top: 20px;
+  /* margin-left: 107px; */
+}
+.jwli-logo img{
+  height: 130px;
+}
+.jwli-intro, .email-section{
+  /* margin-left: 20px; */
+}
+.jwli-intro h1{
+  font-size: 2.2rem;
+}
+.jwli-intro p{
+  font-size: 1.2rem;
+    margin: 0 23%;
+    text-align: justify;
+    line-height: 2rem;
+
+}
+.jwli-image img{
+  height: 100%;
+  float: right;
+  margin-right: 20px;
+}
+.email-section p{
+  font-size: 1.2rem;
+}
+.email-section input{
+  height: 32px;
+  font-size: 16px;
+  width: 34%;
+  margin-right: 16px;
+}
+.email-section button{
+  height: 32px;
+    width: 16%;
+    font-size: 17px;
+    background: rgba(186, 196, 206, 1);
+    border-radius: 6px;
+    color: white;
+    border: none;
+}
+.h2-section h2{
+  text-align: center;
+  font-size: 2.2rem;
+  margin: 24px 152px;
+}
+.left-p{
+  text-align: end;
+    padding-right: 13px;
+    font-size: 1.3rem;
+}
+.left-p p{
+  /* width: 50%; */
+    text-align: left;
+    margin-left: 50%;
+}
+.left-p p span{
+  border-top: 2px solid pink;
+  font-weight: bold;
+
+}
+.right-p{
+padding-left: 13px;
+    font-size: 1.3rem;
+}
+.right-p p{
+  text-align: left;
+  width: 50%;
+}
+.right-p p span{
+  border-top: 2px solid pink;
+  font-weight: bold;
+}
+.bottom-p{
+  text-align: center;
+    font-size: 1.3rem;
+}
+.bottom-p p{
+  color: gray;
+    width: 50%;
+    margin: 0 auto;
+}
+.our-history-title{
+  font-size: 2rem;
+  margin-left: 36px;
+}
+.our-history-paragraph{
+  line-height: 2.5rem;
+    font-size: 1.3rem;
+}
+.our-history-paragraph p{
+
+  margin-left: 36px;
+  margin-right: 54px;
+  text-align: justify;
+}
+.break::after{
+  content: "\a";
+  white-space: pre;
+}
+.history-photo-one img{
+  height: 265px;
+}
+.history-photo-one figure{
+  float: right;
+  /* margin-left: 13px; */
+}
+.history-photo-two figure{
+  float: right;
+  /* margin-left: 20px; */
+}
+.history-photo-one figcaption{
+  text-align: center;
+}
+.history-photo-two img{
+  height: 265px;
+}
+.history-photo-two figcaption{
+  text-align: center;
+}
+.who-we-are-title{
+  text-align: center;
+    font-size: 2rem;
+}
+.who-we-are-title h3{
+  margin: 35px;
+}
+.founder-photo{
+  text-align: center;
+}
+.founder-photo img{
+  height: 296px;
+}
+.founder-title{
+  margin: 0 32px;
+  font-size: 1.5rem;
+}
+.founder-paragraph{
+  margin: 0 32px;
+    text-align: justify;
+    line-height: 2.5rem;
+    font-size: 1.3rem;
+}
+
+.title{
+  font-size: 2rem;
+  color: lightgray;
+}
+.title h3{
+  margin: 27px 32px 23px;
+}
+.title img{
+  height: 41px;
+  margin: 20px 32px 0px;
+}
+.paragraph{
+  text-align: justify;
+    margin: 0 32px;
+    line-height: 2.5rem;
+    font-size: 1.3rem;
+}
+.sign-up{
+  text-align: right;
+}
+.sign-up p{
+  display: inline-block;
+  margin-right: 31%;
+  font-size: 1.7rem;
+  color: white;
+}
+.sign-up input{
+  height: 32px;
+    font-size: 17px;
+    width: 21%;
+    margin-right: 16px;
+}
+.sign-up button{
+  height: 32px;
+    width: 9%;
+    font-size: 16px;
+    margin-right: 75px;
+    background: rgba(130, 145, 152, 1);
+    border-radius: 6px;
+    color: white;
+    border: none;
+}
+footer{
+  font-size: 1.2rem;
+    color: white;
+}
+.footer-top{
+font-weight: bold;
+margin-left: 20px;
+margin-right: 20px;
+}
+.footer-top-left p{
+float: left;
+}
+.footer-top-right ul{
+float: right;
+list-style: none;
+}
+.footer-top-right ul li{
+float: left;
+padding-right: 35px;
+cursor: pointer;
+}
+
+.footer-top-right ul li:last-child{
+  padding-right: 4px;
+}
+.footer-bottom ul{
+  list-style: none;
+  float: left;
+}
+.footer-bottom-left section{
+  width: 37.5%;
+  float: left;
+}
+.footer-bottom-left section ul li{
+  cursor: pointer;
+}
+#homeFooter{
+  width: 25%;
+}
+.footer-bottom-left section + section ul{
+  margin-bottom: 0;
+}
+.footer-bottom-left section + section ul li:last-child{
+  padding: 0;
+}
+.footer-bottom ul li{
+  /* float: left;
+  padding-right: 12px; */
+}
+.footer-bottom-left li{
+  padding-bottom: 8px;
+}
+.footer-bottom-left li:first-of-type{
+  font-weight: bold;
+}
+.footer-bottom-right ul{
+  float: right;
+}
+.footer-bottom-right li{
+  padding-right: 22px;
+  font-weight: bold;
+  float: left;
+}
+
+/* ******************************************** */
+/* MEDIA QUERIES  */
+/* *********************************************** */
+@media(max-width: 1931px){
+  nav ul li{
+    margin-right: 10%;
+  }
+}
+@media(max-width: 1492px){
+  nav ul li{
+    margin-right: 9%;
+  }
+  .jwli-intro p{
+    margin: 0px 18%;
+  }
+}
+@media(max-width: 1219px){
+  nav ul li{
+    margin-right: 8%;
+  }
+  .jwli-intro p{
+    margin: 0px 15%;
+  }
+}
+@media(max-width: 1032px){
+  nav ul li{
+    margin-right: 7%;
+  }
+  .jwli-intro p{
+    margin: 0px 10%;
+  }
+}
+
+@media (max-width: 978px){
+  nav ul li:nth-child(5){
+    display: none;
+  }
+  nav ul li{
+    margin-right: 9%;
+  }
+}
+@media (max-width: 962px){
+  .our-history-paragraph{
+    font-size: 1.1rem;
+  }
+  .founder-paragraph{
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 951px){
+  .our-history-section{
+    height: 700px;
+  }
+  .history-blurb{
+    width: 100%;
+    height: 400px;
+    text-align: center;
+  }
+  .history-photo-one, .history-photo-two{
+    width: 50%;
+    height: 300px;
+    float: left;
+    text-align: center;
+  }
+  .history-photo-one figure{
+    margin-left: 13px;
+    float: none;
+  }
+  .history-photo-two figure{
+    margin-left:20px ;
+    float: none;
+  }
+}
+@media (max-width: 924px){
+  .h2-section h2{
+    font-size: 2rem;
+  }
+}
+@media (max-width: 910px){
+  nav ul li{
+    margin-right: 8%;
+  }
+}
+@media (max-width: 903px){
+  .first-blurb{
+    width: 100%;
+    text-align: center;
+  }
+  .jwli-image{
+    display: none;
+  }
+}
+@media(max-width: 874px){
+  .programs {
+    display: none;
+  }
+}
+@media (max-width: 868px){
+  nav ul li:nth-child(n+5){
+    display:none;
+  }
+  nav ul li{
+    font-size: 2rem;
+    margin-right: 6%;
+    margin-left: 6%;
+  }
+  nav ul li:last-child{
+    display: list-item;
+  }
+  .left-p, .right-p{
+    display: none;
+  }
+  .second-section{
+    height: 200px;
+  }
+}
+@media (max-width: 819px){
+.founder-photo{
+  display: none;
+}
+.founder-blurb{
+  width: 100%;
+  text-align: center;
+}
+.founder-paragraph{
+  font-size: 1.3rem;
+}
+.our-history-title h3{
+  margin-top: 2px;
+}
+.sign-up button{
+  margin-right: 43px;
+}
+}
+
+@media (max-width: 768px){
+  nav ul li{
+    margin-right: 6%;
+    margin-left: 4%;
+  }
+  .h2-section h2{
+    margin: 24px 89px;
+  }
+  .first-blurb,.left-p, .right-p, .history-blurb, .history-photo-one, .history-photo-two, .founder-photo, .founder-blurb, .fish-family, .simmons {
+    width: 100%;
+  }
+  .our-history-section{
+    height: 1000px;
+  }
+  .who-we-are-section, .founder-blurb{
+    height: 500px;
+  }
+  .last-paragraphs{
+    height: 600px;
+  }
+  .jwli-image{
+    display: none;
+  }
+  .sign-up{
+    display: none;
+  }
+
+}
+@media (max-width: 734px){
+  .footer-top-right{
+    display: none;  
+  }
+  .footer-top-left{
+    width: 100%;
+  }
+  .footer-top-left p{
+    text-align: center;
+    float: none;
+  }
+}
+@media (max-width: 709px){
+  nav ul li:nth-child(4){
+    display:none;
+  }
+  nav ul li{
+    margin-right: 7%;
+    margin-left: 7%;
+  }
+  .our-history-section{
+    display: none;
+  }
+}
+@media (max-width: 600px){
+  nav ul li:nth-child(3){
+    display:none;
+  }
+  nav ul li{
+    margin-right: 11%;
+    margin-left: 11%;
+  }
+  .h2-section h2{
+    font-size: 1.6rem;
+  }
+  footer{
+    height: 100px;
+  }
+  /* .footer-top-left{
+    width: 100%;
+    text-align: center;
+  } */
+  .footer-top-left p{
+    margin-left: 0;
+  }
+  .footer-top-right{
+    display: none;
+  }
+  .footer-bottom{
+    display: none;
+  }
+}
+@media (max-width:518px){
+  nav ul li:nth-child(1),nav ul li:nth-child(2){
+    display: none;
+  }
+  nav ul li:nth-child(9){
+    width: 100%;
+    text-align: left;
+    margin: 0;
+    /* margin-left: 191px;
+    font-size: 3rem; */
+    }
+    .second-section{
+      display: none;
+    }
+}
