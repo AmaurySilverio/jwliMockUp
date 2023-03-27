@@ -693,7 +693,7 @@ cursor: pointer;
     display: none;
   }
 }
-@media (max-width:518px){
+@media (max-width: 518px){
   nav ul li:nth-child(1),nav ul li:nth-child(2){
     display: none;
   }
@@ -706,5 +706,8 @@ cursor: pointer;
     }
     .second-section{
       display: none;
+    }
+    .email-section button{
+      width: 21%;
     }
 }
